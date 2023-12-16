@@ -1,0 +1,33 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== Width ==========*/
+
+    /*========== Colors ==========*/
+    --accent-color: #3F8CFF;
+    --background-body-color: #F4F9FD;
+    --text-dark-color: #0A1629;
+    --text-light-color: #FFFFFF;
+    --text-gray-color: #7D8592;
+
+    /*========== Font and typography ==========*/
+    --body-font-family: 'Nunito Sans', sans-serif;
+
+    /*========== Font size ==========*/
+    --smaller-font-size: 14px;
+    --small-font-size: 16px;
+    --normal-font-size: 18px;
+    --big-font-size: 22px;
+    --bigger-font-size: 36px;
+
+    /*========== Font weight ==========*/
+    --regular-font-weight: 400;
+    --semibold-font-weight: 600;
+    --bold-font-weight: 700;
+
+    /*========== Line height ==========*/
+    --smaller-line-height: 24px;
+    --small-line-height: normal;
+    --normal-line-height: 26px;
+    --big-line-height: normal;
+    --bigger-line-height: normal;
+}
