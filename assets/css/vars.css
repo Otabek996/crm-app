@@ -33,3 +33,15 @@
     --big-line-height: normal;
     --bigger-line-height: normal;
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 360px) {
+    :root {
+        /*========== Font size ==========*/
+        --big-font-size: 18px;
+
+        /*========== Line height ==========*/
+        --big-line-height: 26px;
+    }
+}

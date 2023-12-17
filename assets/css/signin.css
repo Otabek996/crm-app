@@ -98,3 +98,55 @@
 .form-button:hover {
     background-color: #3384ff;
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 700px) {
+    .sign-container {
+        width: 585px;
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .sign-container {
+        width: 525px;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .sign-container {
+        width: 460px;
+        padding: 20px;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 495px) {
+    .sign-container {
+        width: 400px;
+    }
+
+    .form-input {
+        width: 320px;
+    }
+
+    .form-button {
+        margin: 15px 0 0 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .sign-container {
+        width: 320px;
+    }
+
+    .form-item {
+        width: 100%;
+    }
+
+    .form-input {
+        width: 280px;
+    }
+}
