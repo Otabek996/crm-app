@@ -14,3 +14,22 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    font-family: var(--body-font-family);
+    background-color: var(--background-body-color);
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*=============== STYLES ===============*/
+.container {
+    width: 1360px;
+    margin: 0 auto;
+}

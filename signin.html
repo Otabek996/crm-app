@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/signin.css">
+
+    <title>Sign In</title>
+</head>
+<body>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== SIGN IN ====================-->
+        <section class="sign">
+            <div class="container sign-container">
+                <h1 class="sign-title">Sign In</h1>
+
+                <form class="sign-form" id="sign-form" action="#" method="#">
+                    <div class="form-wrapper">
+                        <div class="form-item">
+                            <label class="form-label" for="email-input">Email Address</label>
+                            <input class="form-input" id="email-input" type="email" name="email_address" placeholder="Email">
+                        </div>
+
+                        <div class="form-item">
+                            <label class="form-label" for="password-input">Password</label>
+                            <div class="form-position">
+                                <input class="form-input" id="password-input" type="password" name="password" placeholder="Password">
+                                <img class="form-icon" id="eye-on" src="assets/icon/eye-line.svg" alt="Eye on">
+                                <img class="form-icon eye-off" id="eye-off" src="assets/icon/eye-off-line.svg" alt="Eye off">
+                            </div>
+                        </div>
+
+                        <div class="form-item">
+                            <button class="form-button" type="submit">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== JAVASCRIPT ====================-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
