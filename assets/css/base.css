@@ -16,6 +16,8 @@ html {
 }
 
 body {
+    display: flex;
+    gap: 30px;
     font-family: var(--body-font-family);
     background-color: var(--background-body-color);
     padding: 20px;
