@@ -1,6 +1,7 @@
 /*==================== NAVBAR ====================*/
 .header {
     width: 200px;
+    height: 94vh;
     box-shadow: 0px 6px 58px 0px rgba(196, 203, 214, 0.10);
     background-color: var(--background-container-color);
     border-radius: 24px;
