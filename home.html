@@ -4,13 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/home.css">
 
     <title>CRM</title>
 </head>
 <body>
-    
+    <!--==================== HEADER ====================-->
+    <header class="header">
+        <div class="header-container">
+            <nav class="navbar">
+                <a class="navbar-logo" href="#">
+                    <img class="navbar-logo__img" src="assets/img/logo.jpg" alt="Zohid Kebab">
+                </a>
+
+                <div class="navbar-menu">
+                    <ul class="navbar-list">
+                        <li class="navbar-item" id="dashboard">
+                            <a class="navbar-link" href="#dashboard">
+                                <img class="navbar-link__icon" src="assets/icon/dashboard-fill.svg" alt="Dashboard">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="projects">
+                            <a class="navbar-link" href="#projects">
+                                <img class="navbar-link__icon" src="assets/icon/projects.svg" alt="Projects">
+                                <span>Projects</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="calendar">
+                            <a class="navbar-link" href="#calendar">
+                                <img class="navbar-link__icon" src="assets/icon/calendar.svg" alt="Calendar">
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="vacations">
+                            <a class="navbar-link" href="#vacations">
+                                <img class="navbar-link__icon" src="assets/icon/vacations.svg" alt="Vacations">
+                                <span>Vacations</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="employees">
+                            <a class="navbar-link" href="#employees">
+                                <img class="navbar-link__icon" src="assets/icon/employees.svg" alt="Employees">
+                                <span>Employees</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="messenger">
+                            <a class="navbar-link" href="#messenger">
+                                <img class="navbar-link__icon" src="assets/icon/messenger.svg" alt="Messenger">
+                                <span>Messenger</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="infoportal">
+                            <a class="navbar-link" href="#infoportal">
+                                <img class="navbar-link__icon" src="assets/icon/infoportal.svg" alt="Info Portal">
+                                <span>Info Portal</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-list navbar-list-bottom">
+                        <li class="navbar-item">
+                            <a class="navbar-link logout-link" href="signin.html">
+                                <img class="navbar-link__icon" src="assets/icon/logout.svg" alt="Logout">
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item navbar-item-toggle">
+                            <button class="navbar-toggle">
+                                <img class="toggle-icon-open" src="assets/icon/toggle.svg" alt="Navbar toggle open">
+                                <img class="toggle-icon-close icon-off" src="assets/icon/x.svg" alt="Navbar toggle close">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--==================== JAVASCRIPT ====================-->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
