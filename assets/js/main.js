@@ -63,5 +63,3 @@ if (navToggle) {
       document.querySelector('html').classList.toggle('no-scroll');
   });
 }
-
-
