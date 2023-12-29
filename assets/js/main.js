@@ -24,14 +24,13 @@ icons.forEach((icon) => {
 const navbarItems = document.querySelectorAll(".navbar-item");
 
 function activeLink (link) {
-  for (let i = 0; i < navbarItems.length - 2; i++) {
+  for (let i = 1; i < navbarItems.length - 1; i++) {
     navbarItems[i].classList.remove("active-link");
   }
   link.classList.add("active-link");
-  url = window.location.href;
 }
 
-for (let i = 0; i < navbarItems.length - 2; i++) {
+for (let i = 1; i < navbarItems.length - 1; i++) {
   navbarItems[i].addEventListener("click", () => activeLink(navbarItems[i]));
 }
 
