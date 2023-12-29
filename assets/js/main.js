@@ -22,7 +22,6 @@ icons.forEach((icon) => {
 
 /*==================== ACTIVE LINK ====================*/
 const navbarItems = document.querySelectorAll(".navbar-item");
-let url = window.location.href.split("#")[1];
 
 function activeLink (link) {
   for (let i = 0; i < navbarItems.length - 2; i++) {
@@ -30,14 +29,6 @@ function activeLink (link) {
   }
   link.classList.add("active-link");
   url = window.location.href;
-}
-
-if (url != undefined) {
-  for (let i = 0; i < navbarItems.length - 2; i++) {
-    if (url === navbarItems[i].id) {
-      navbarItems[i].classList.add("active-link");
-    }
-  }
 }
 
 for (let i = 0; i < navbarItems.length - 2; i++) {
