@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== REMIX ICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/categories.css">
 
-    <title>CRM</title>
+    <title>Categories</title>
 </head>
 <body>
+    <div class="background-shadow disable-background-shadow" id="background-shadow"></div>
     <!--==================== HEADER ====================-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-container">
             <nav class="navbar">
-                <a class="navbar-logo" href="#">
-                    <img class="navbar-logo__img" src="assets/img/logo.jpg" alt="Zohid Kebab" title="Zohid Kebab">
-                </a>
+                <div class="navbar-box">
+                    <div class="navbar-item navbar-item-toggle" id="nav-toggle">
+                        <button class="navbar-toggle">
+                            <img class="toggle-icon-open" src="assets/icon/toggle.svg" alt="Navbar toggle open" id="nav-open">
+                            <img class="toggle-icon-close icon-off" src="assets/icon/x.svg" alt="Navbar toggle close" id="nav-close">
+                        </button>
+                    </div>
+    
+                    <a class="navbar-logo" href="home.html">
+                        <img class="navbar-logo__img" src="assets/img/logo.jpg" alt="Zohid Kebab" title="Zohid Kebab">
+                    </a>
+                </div>
 
-                <div class="navbar-menu">
+                <div class="navbar-menu" id="nav-menu">
                     <ul class="navbar-list">
-                        <li class="navbar-item" id="сategories">
+                        <li class="navbar-item active-link" id="сategories">
                             <a class="navbar-link" href="сategories.html">
                                 <img class="navbar-link__icon" src="assets/icon/сategories.svg" alt="Сategories">
                                 <span>Категории</span>
@@ -70,17 +77,65 @@
                                 <span>Выход</span>
                             </a>
                         </li>
-                        <li class="navbar-item navbar-item-toggle">
-                            <button class="navbar-toggle">
-                                <img class="toggle-icon-open" src="assets/icon/toggle.svg" alt="Navbar toggle open">
-                                <img class="toggle-icon-close icon-off" src="assets/icon/x.svg" alt="Navbar toggle close">
-                            </button>
-                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== CATEGORIES ====================-->
+        <section class="categories">
+            <h1 class="title">Категории</h1>
+
+            <div class="categories-content">
+                <div class="categories-item item-1">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-2">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-3">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-4">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-5">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-6">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-7">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-8">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-9">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-10">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+
+                <div class="categories-item item-11">
+                    <p class="categories-title">Говяжья мясо</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!--==================== JAVASCRIPT ====================-->
     <script src="assets/js/main.js"></script>

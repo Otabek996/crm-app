@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== REMIX ICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/orders.css">
 
-    <title>CRM</title>
+    <title>Orders</title>
 </head>
 <body>
     <!--==================== HEADER ====================-->
     <header class="header">
         <div class="header-container">
             <nav class="navbar">
-                <a class="navbar-logo" href="#">
+                <a class="navbar-logo" href="home.html">
                     <img class="navbar-logo__img" src="assets/img/logo.jpg" alt="Zohid Kebab" title="Zohid Kebab">
                 </a>
 
@@ -37,7 +34,7 @@
                                 <span>Меню</span>
                             </a>
                         </li>
-                        <li class="navbar-item" id="orders">
+                        <li class="navbar-item active-link" id="orders">
                             <a class="navbar-link" href="orders.html">
                                 <img class="navbar-link__icon" src="assets/icon/orders.svg" alt="Orders">
                                 <span>Заказы</span>
@@ -81,6 +78,14 @@
             </nav>
         </div>
     </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== BUTTONS ====================-->
+        <section class="categories">
+            <h1 class="title">Заказы</h1>
+        </section>
+    </main>
 
     <!--==================== JAVASCRIPT ====================-->
     <script src="assets/js/main.js"></script>

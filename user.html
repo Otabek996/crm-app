@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== REMIX ICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
-    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/user.css">
 
-    <title>CRM</title>
+    <title>User</title>
 </head>
 <body>
     <!--==================== HEADER ====================-->
     <header class="header">
         <div class="header-container">
             <nav class="navbar">
-                <a class="navbar-logo" href="#">
+                <a class="navbar-logo" href="home.html">
                     <img class="navbar-logo__img" src="assets/img/logo.jpg" alt="Zohid Kebab" title="Zohid Kebab">
                 </a>
 
@@ -43,7 +40,7 @@
                                 <span>Заказы</span>
                             </a>
                         </li>
-                        <li class="navbar-item" id="user">
+                        <li class="navbar-item active-link" id="user">
                             <a class="navbar-link" href="user.html">
                                 <img class="navbar-link__icon" src="assets/icon/user.svg" alt="User">
                                 <span>Пользователь</span>
@@ -81,6 +78,18 @@
             </nav>
         </div>
     </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== USER ====================-->
+        <section class="user">
+            <h1 class="title">Мой профиль</h1>
+
+            <div class="user-container">
+
+            </div>
+        </section>
+    </main>
 
     <!--==================== JAVASCRIPT ====================-->
     <script src="assets/js/main.js"></script>
