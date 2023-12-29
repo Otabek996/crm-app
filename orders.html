@@ -12,15 +12,25 @@
     <title>Orders</title>
 </head>
 <body>
+    <div class="background-shadow disable-background-shadow" id="background-shadow"></div>
     <!--==================== HEADER ====================-->
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-container">
             <nav class="navbar">
-                <a class="navbar-logo" href="home.html">
-                    <img class="navbar-logo__img" src="assets/img/logo.jpg" alt="Zohid Kebab" title="Zohid Kebab">
-                </a>
+                <div class="navbar-box">
+                    <div class="navbar-item navbar-item-toggle" id="nav-toggle">
+                        <button class="navbar-toggle">
+                            <img class="toggle-icon-open" src="assets/icon/toggle.svg" alt="Navbar toggle open" id="nav-open">
+                            <img class="toggle-icon-close icon-off" src="assets/icon/x.svg" alt="Navbar toggle close" id="nav-close">
+                        </button>
+                    </div>
+    
+                    <a class="navbar-logo" href="home.html">
+                        <img class="navbar-logo__img" src="assets/img/logo.jpg" alt="Zohid Kebab" title="Zohid Kebab">
+                    </a>
+                </div>
 
-                <div class="navbar-menu">
+                <div class="navbar-menu" id="nav-menu">
                     <ul class="navbar-list">
                         <li class="navbar-item" id="сategories">
                             <a class="navbar-link" href="сategories.html">
@@ -66,12 +76,6 @@
                                 <img class="navbar-link__icon" src="assets/icon/logout.svg" alt="Logout">
                                 <span>Выход</span>
                             </a>
-                        </li>
-                        <li class="navbar-item navbar-item-toggle">
-                            <button class="navbar-toggle">
-                                <img class="toggle-icon-open" src="assets/icon/toggle.svg" alt="Navbar toggle open">
-                                <img class="toggle-icon-close icon-off" src="assets/icon/x.svg" alt="Navbar toggle close">
-                            </button>
                         </li>
                     </ul>
                 </div>
