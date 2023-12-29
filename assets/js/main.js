@@ -55,11 +55,20 @@ const navMenu = document.getElementById('nav-menu'),
 /*===== MENU SHOW =====*/
 if (navToggle) {
   navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('show-menu');
-      navOpen.classList.toggle('icon-off');
-      navClose.classList.toggle('icon-on');
-      header.classList.toggle('menu-on');
-      backgroundShadow.classList.toggle('disable-background-shadow');
-      document.querySelector('html').classList.toggle('no-scroll');
+    navMenu.classList.toggle('show-menu');
+    navOpen.classList.toggle('icon-off');
+    navClose.classList.toggle('icon-on');
+    header.classList.toggle('menu-on');
+    backgroundShadow.classList.toggle('disable-background-shadow');
+    document.querySelector('html').classList.toggle('no-scroll');
   });
+
+  backgroundShadow.addEventListener('click', () => {
+    navMenu.classList.toggle('show-menu');
+    navOpen.classList.toggle('icon-off');
+    navClose.classList.toggle('icon-on');
+    header.classList.toggle('menu-on');
+    backgroundShadow.classList.toggle('disable-background-shadow');
+    document.querySelector('html').classList.toggle('no-scroll');
+  })
 }
