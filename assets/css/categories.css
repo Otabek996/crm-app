@@ -15,9 +15,10 @@
 }
 
 .categories-header__subbox {
+    width: 65%;
     display: flex;
     align-items: center;
-    gap: 500px;
+    justify-content: space-between;
 }
 
 .search-box {
@@ -315,7 +316,19 @@ td:last-child {
 	td:nth-of-type(6):before { content: "Change"; }
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 775px) {
+    .categories-header {
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+
+    .categories-header__subbox {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 695px) {
     
 }
 
