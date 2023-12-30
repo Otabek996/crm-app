@@ -345,17 +345,4 @@ td:last-child {
     .categories {
         padding: 0;
     }
-
-    .categories-content {
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .categories-content {
-    }
-}
-
-@media screen and (max-width: 368px) {
-    .categories-content {
-    }
 }
