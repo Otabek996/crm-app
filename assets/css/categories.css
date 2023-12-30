@@ -268,6 +268,49 @@ td:last-child {
 }
 
 /*==================== BREAKPOINTS ====================*/
+@media screen and (max-width: 875px) {
+    .search-box {
+        width: 250px;
+    }
+
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    tr {
+        border: 1px solid var(--border-input-color);
+    }
+
+    td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+
+    td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+    td:nth-of-type(1):before { content: "№"; }
+	td:nth-of-type(2):before { content: "id"; }
+	td:nth-of-type(3):before { content: "name"; }
+	td:nth-of-type(4):before { content: "prioraty"; }
+	td:nth-of-type(5):before { content: "parent id"; }
+	td:nth-of-type(6):before { content: "Change"; }
+}
+
 @media screen and (max-width: 430px) {
     .categories {
         padding: 0;
