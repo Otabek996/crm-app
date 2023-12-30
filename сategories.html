@@ -50,19 +50,37 @@
                                 <span>Заказы</span>
                             </a>
                         </li>
-                        <li class="navbar-item" id="user">
+                        <li class="navbar-item" id="user" style="display: none;">
                             <a class="navbar-link" href="user.html">
                                 <img class="navbar-link__icon" src="assets/icon/user.svg" alt="User">
                                 <span>Пользователь</span>
                             </a>
                         </li>
-                        <li class="navbar-item" id="buttons">
+                        <li class="navbar-item" id="buttons" style="display: none;">
                             <a class="navbar-link" href="buttons.html">
                                 <img class="navbar-link__icon" src="assets/icon/buttons.svg" alt="Buttons">
                                 <span>Кнопки</span>
                             </a>
                         </li>
                         <li class="navbar-item" id="branches">
+                            <a class="navbar-link" href="branches.html">
+                                <img class="navbar-link__icon" src="assets/icon/branches.svg" alt="Branches">
+                                <span>Филиалы</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="branches" style="visibility: hidden;">
+                            <a class="navbar-link" href="branches.html">
+                                <img class="navbar-link__icon" src="assets/icon/branches.svg" alt="Branches">
+                                <span>Филиалы</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="branches" style="visibility: hidden;">
+                            <a class="navbar-link" href="branches.html">
+                                <img class="navbar-link__icon" src="assets/icon/branches.svg" alt="Branches">
+                                <span>Филиалы</span>
+                            </a>
+                        </li>
+                        <li class="navbar-item" id="branches" style="visibility: hidden;">
                             <a class="navbar-link" href="branches.html">
                                 <img class="navbar-link__icon" src="assets/icon/branches.svg" alt="Branches">
                                 <span>Филиалы</span>
@@ -87,51 +105,146 @@
     <main class="main">
         <!--==================== CATEGORIES ====================-->
         <section class="categories">
-            <h1 class="title">Категории</h1>
+            <div class="categories-header">
+                <h1 class="title">Категории</h1>
+
+                <div class="categories-header__subbox">
+                    <form class="search-box" style="display: none;">
+                        <button class="search-button" type="submit">
+                            <img src="/assets/icon/search.svg" alt="Search">
+                        </button>
+                        <input class="search-input" type="search" placeholder="Поиск">
+                    </form>
+    
+                    <button class="add-categories">
+                        <img src="/assets/icon/add.svg" alt="Add">
+                    </button>
+                </div>
+            </div>
 
             <div class="categories-content">
-                <div class="categories-item item-1">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>prioraty</th>
+                            <th>parent id</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1234567</td>
+                            <td>Burger meat</td>
+                            <td>1</td>
+                            <td>73742398</td>
+                            <td class="change-td">
+                                <button class="edit-button">
+                                    <img src="/assets/icon/edit.svg" alt="Edit">
+                                </button>
+                                <button class="delete-button">
+                                    <img src="/assets/icon/delete.svg" alt="Delete">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1234567</td>
+                            <td>Burger meat</td>
+                            <td>1</td>
+                            <td>73742398</td>
+                            <td class="change-td">
+                                <button class="edit-button">
+                                    <img src="/assets/icon/edit.svg" alt="Edit">
+                                </button>
+                                <button class="delete-button">
+                                    <img src="/assets/icon/delete.svg" alt="Delete">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1234567</td>
+                            <td>Burger meat</td>
+                            <td>1</td>
+                            <td>73742398</td>
+                            <td class="change-td">
+                                <button class="edit-button">
+                                    <img src="/assets/icon/edit.svg" alt="Edit">
+                                </button>
+                                <button class="delete-button">
+                                    <img src="/assets/icon/delete.svg" alt="Delete">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1234567</td>
+                            <td>Burger meat</td>
+                            <td>1</td>
+                            <td>73742398</td>
+                            <td class="change-td">
+                                <button class="edit-button">
+                                    <img src="/assets/icon/edit.svg" alt="Edit">
+                                </button>
+                                <button class="delete-button">
+                                    <img src="/assets/icon/delete.svg" alt="Delete">
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1234567</td>
+                            <td>Burger meat</td>
+                            <td>1</td>
+                            <td>73742398</td>
+                            <td class="change-td">
+                                <button class="edit-button">
+                                    <img src="/assets/icon/edit.svg" alt="Edit">
+                                </button>
+                                <button class="delete-button">
+                                    <img src="/assets/icon/delete.svg" alt="Delete">
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <div class="categories-item item-2">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
+                <div class="pagination-box">
+                    <ul class="pagination-buttons">
+                        <div class="subbox">
+                            <p class="pagination-text">Cтрок на странице:</p>
 
-                <div class="categories-item item-3">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
+                            <div class="dropdown">
+                                <button class="dropdown-btn" id="dropdown-button">
+                                    <span id="main-number">10</span>
+                                    <img class="arrow" src="/assets/icon/down.svg" alt="Down" id="arrow">
+                                </button>
 
-                <div class="categories-item item-4">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
+                                <ul class="dropdown-content" id="dropdown-content">
+                                    <li class="dropdown-menu-item-li" style="--delay: 1;"><a class="dropdown-menu-item" href="#">10</a></li>
+                                    <li class="dropdown-menu-item-li" style="--delay: 2;"><a class="dropdown-menu-item" href="#">20</a></li>
+                                    <li class="dropdown-menu-item-li" style="--delay: 3;"><a class="dropdown-menu-item" href="#">30</a></li>
+                                    <li class="dropdown-menu-item-li" style="--delay: 4;"><a class="dropdown-menu-item" href="#">50</a></li>
+                                    <li class="dropdown-menu-item-li" style="--delay: 5;"><a class="dropdown-menu-item" href="#">100</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <div class="categories-item item-5">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
+                        <div class="subbox">
+                            <p class="pagination-text">1-10 из 17</p>
 
-                <div class="categories-item item-6">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
-
-                <div class="categories-item item-7">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
-
-                <div class="categories-item item-8">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
-
-                <div class="categories-item item-9">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
-
-                <div class="categories-item item-10">
-                    <p class="categories-title">Говяжья мясо</p>
-                </div>
-
-                <div class="categories-item item-11">
-                    <p class="categories-title">Говяжья мясо</p>
+                            <button class="array">
+                                <img src="/assets/icon/left.svg" alt="Left">
+                            </button>
+                            <button class="array">
+                                <img src="/assets/icon/right.svg" alt="Right">
+                            </button>
+                        </div>
+                    </ul>
                 </div>
             </div>
         </section>
