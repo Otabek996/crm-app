@@ -139,30 +139,93 @@ td:last-child {
 .pagination-buttons {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
-.btn-pagination {
-    font-size: var(--small-font-size);
+.pagination-text {
+    font-size: var(--smaller-font-size);
     font-weight: var(--regular-font-weight);
-    line-height: var(--small-line-height);
+    line-height: var(--smaller-line-height);
     color: var(--text-dark-color);
-    background-color: var(--background-container-color);
+}
+
+.dropdown {
+    max-width: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.dropdown-btn {
+    font-size: var(--smaller-font-size);
+    font-weight: var(--regular-font-weight);
+    line-height: var(--smaller-line-height);
+    color: var(--text-dark-color);
     border: 1px solid var(--border-input-color);
-    transition: all 0.2s linear;
-    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: var(--background-container-color);
+    padding: 5px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.2s linear;
 }
 
-.btn-pagination:hover {
+.dropdown-btn:hover {
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
 
-.active-pagination {
-    font-weight: var(--bold-font-weight);
+.dropdown-btn .arrow {
+    width: 19px;
+    height: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--regular-font-weight);
+    line-height: var(--smaller-line-height);
+    border: 1px solid var(--border-input-color);
+    border-radius: 12px;
+    background-color: var(--background-container-color);
+    padding: 5px;
+    position: absolute;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-content li {
+    position: relative;
+    left: 110%;
+    transition: all 0.2s ease-in-out;
+    transition-delay: calc(60ms * var(--delay));
+}
+
+.dropdown-content li a {
+    color: var(--text-dark-color);
+    transition: color 0.2s linear;
+}
+
+.dropdown-content li:hover a {
     color: var(--accent-color);
-    border-color: var(--accent-color);
+}
+
+.dropdown-btn:focus + .dropdown-content {
+    visibility: visible;
+}
+
+.dropdown-btn:focus > .arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-btn:focus + .dropdown-content li {
+    left: 0;
 }
 
 /*==================== BREAKPOINTS ====================*/
