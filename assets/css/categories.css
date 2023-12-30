@@ -14,8 +14,13 @@
     justify-content: space-between;
 }
 
+.categories-header__subbox {
+    display: flex;
+    align-items: center;
+    gap: 500px;
+}
+
 .search-box {
-    width: 415px;
     display: flex;
     align-items: center;
     border-radius: 14px;
@@ -52,15 +57,14 @@
 }
 
 .add-categories {
-    font-size: calc(var(--big-font-size) + 5px);
-    font-weight: var(--regular-font-weight);
-    line-height: var(--big-line-height);
-    color: var(--text-gray-color);
+    height: 38px;
+    display: flex;
+    align-items: center;
     border: 1px solid var(--border-input-color);
     border-radius: 14px;
     background-color: var(--background-container-color);
     transition: border-color 0.2s ease-in-out;
-    padding: 2px 8px;
+    padding: 0 6px;
     cursor: pointer;
 }
 
@@ -309,6 +313,10 @@ td:last-child {
 	td:nth-of-type(4):before { content: "prioraty"; }
 	td:nth-of-type(5):before { content: "parent id"; }
 	td:nth-of-type(6):before { content: "Change"; }
+}
+
+@media screen and (max-width: 745px) {
+    
 }
 
 @media screen and (max-width: 430px) {
