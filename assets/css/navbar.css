@@ -67,6 +67,7 @@ body {
 }
 
 .navbar-item {
+    width: 168px;
     background: transparent;
     border-radius: 10px;
 }
