@@ -323,19 +323,22 @@ td:last-child {
 }
 
 @media screen and (max-width: 775px) {
-    .categories-header {
+    /* .categories-header {
         flex-direction: column;
         align-items: start;
         gap: 10px;
-    }
+    } */
 
-    .categories-header__subbox {
+    /* .categories-header__subbox {
         width: 100%;
-    }
+    } */
 }
 
-@media screen and (max-width: 695px) {
-    
+@media screen and (max-width: 676px) {
+    .pagination-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media screen and (max-width: 430px) {
